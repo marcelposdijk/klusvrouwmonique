@@ -31,7 +31,6 @@
     21. Footer
     
 ---------------------------------- */
-
 $PrimaryColor: #ccde02;
 $PrimaryRgbColor: rgb(204, 222, 2);
 
@@ -70,7 +69,7 @@ $mobile-xs-screen: 479px;
 .loader-icon {
   width: 80px;
   height: 80px;
-  border: 5px solid #ccde02;
+  border: 5px solid $PrimaryColor;
   border-right-color: #eee;
   border-radius: 50%;
   position: relative;
@@ -91,13 +90,13 @@ $mobile-xs-screen: 479px;
 /* theme color and basic options */
 a {
   &:hover, &:active {
-    color: #ccde02;
+    color: $PrimaryColor;
     text-decoration: none;
   }
 }
 
 .primary-hover:hover {
-  color: #ccde02 !important;
+  color: $PrimaryColor !important;
 }
 
 .white-hover:hover {
@@ -105,16 +104,16 @@ a {
 }
 
 .bg-primary {
-  background: #ccde02 !important;
+  background: $PrimaryColor !important;
 }
 
 .text-primary {
-  color: #ccde02 !important;
+  color: $PrimaryColor !important;
 }
 
 a.text-primary {
   &:focus, &:hover, &:active {
-    color: #ccde02 !important;
+    color: $PrimaryColor !important;
   }
 }
 
@@ -123,7 +122,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-  color: #ccde02;
+  color: $PrimaryColor;
 }
 
 .read-more {
@@ -143,8 +142,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
  /* custom control */
 .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #ccde02;
-  background-color: #ccde02;
+  border-color: $PrimaryColor;
+  background-color: $PrimaryColor;
 }
 
 /* scroll to top */
@@ -158,8 +157,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   right: 20px;
   display: none;
   border-radius: 50%;
-  background: #ccde02;
-  border: 1px solid #ccde02;
+  background: $PrimaryColor;
+  border: 1px solid $PrimaryColor;
   width: 40px;
   height: 40px;
   line-height: 35px;
@@ -198,8 +197,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   padding: 12px 40px;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #ccde02;
-  border: 1px solid #ccde02;
+  background-color: $PrimaryColor;
+  border: 1px solid $PrimaryColor;
   transition: 250ms all ease-in-out;
 
   &.butn-md {
@@ -236,7 +235,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   }
 
   &:hover, &:active, &:focus {
-    color: #ccde02;
+    color: $PrimaryColor;
   }
 }
 
@@ -274,67 +273,67 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 /* menu area light */
 .navbar-nav li {
   &.current > a, &.active > a {
-    color: #ccde02;
+    color: $PrimaryColor;
   }
 }
 
 .navbar > ul > li.current > a:after {
-  border-color: transparent #ccde02 #ccde02 transparent;
+  border-color: transparent $PrimaryColor $PrimaryColor transparent;
 }
 
 .menu_area-light {
   .navbar-nav li {
     &.current > a, &.active > a {
-      color: #ccde02;
+      color: $PrimaryColor;
     }
   }
 
   .navbar ul ul li.active > a, .navbar-nav li.has-sub a:hover {
-    color: #ccde02;
+    color: $PrimaryColor;
   }
 
   .navbar > ul > li {
     &.has-sub > a:hover:after, &.current > a:after {
-      border-color: transparent #ccde02 #ccde02 transparent;
+      border-color: transparent $PrimaryColor $PrimaryColor transparent;
     }
   }
 
   &.scrollHeader {
     .navbar-nav li {
       &.current > a {
-        color: #ccde02;
+        color: $PrimaryColor;
 
         &:hover {
-          color: #ccde02;
+          color: $PrimaryColor;
         }
       }
 
       &.active > a {
-        color: #ccde02;
+        color: $PrimaryColor;
       }
     }
 
     .navbar > ul > li.current > a:after {
-      border-color: transparent #ccde02 #ccde02 transparent;
+      border-color: transparent $PrimaryColor $PrimaryColor transparent;
     }
   }
 }
 
 @media screen and (min-width: $desk-sm-screen) {
   .header-style1 .navbar-nav li.current > a, .menu_area-light .navbar-nav li.current > a {
-    color: #ccde02;
+    color: $PrimaryColor;
   }
 
   .header-style1 .navbar > ul > li.current > a:after, .menu_area-light .navbar > ul > li.current > a:after {
-    border-color: transparent #ccde02 #ccde02 transparent;
+    border-color: transparent $PrimaryColor $PrimaryColor transparent;
   }
 
   .header-style1.scrollHeader .navbar-nav li.current > a, .menu_area-light.scrollHeader .navbar-nav li.current > a, .header-style1.scrollHeader .navbar-nav li.current > a:hover, .menu_area-light.scrollHeader .navbar-nav li.current > a:hover {
-    color: #ccde02;
+    color: $PrimaryColor;
   }
 
   .header-style1.scrollHeader .navbar > ul > li.current > a:after, .menu_area-light.scrollHeader .navbar > ul > li.current > a:after {
-    border-color: transparent #ccde02 #ccde02 transparent;
+    border-color: transparent $PrimaryColor $PrimaryColor transparent;
   }
 }
 
@@ -378,7 +377,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
       &:last-child {
         a {
-          color: #ccde02;
+          color: $PrimaryColor;
         }
 
         &:after {
@@ -667,7 +666,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
       top: 0;
       right: 0;
       z-index: 99;
-      background: #ccde02;
+      background: $PrimaryColor;
     }
   }
 
@@ -781,8 +780,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   }
 
   .active {
-    border-color: #ccde02;
-    color: #ccde02;
+    border-color: $PrimaryColor;
+    color: $PrimaryColor;
   }
 }
  
@@ -1363,7 +1362,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 }
 
 .highlight-label {
-  background: #ccde02;
+  background: $PrimaryColor;
   color: #fff;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1384,7 +1383,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   position: relative;
   height: 80px;
   width: 80px;
-  background: #ccde02;
+  background: $PrimaryColor;
   text-align: center;
   display: inline-block;
   line-height: 80px;
@@ -1596,7 +1595,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
       content: '\201C';
       font-size: 70px;
       line-height: 1;
-      color: #ccde02;
+      color: $PrimaryColor;
     }
   }
 
@@ -1672,7 +1671,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   }
 
   a:hover {
-    background-color: #ccde02;
+    background-color: $PrimaryColor;
     color: #fff;
   }
 
@@ -1706,7 +1705,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
       }
 
       &:hover span, &.active span {
-        background: #ccde02;
+        background: $PrimaryColor;
       }
     }
   }
@@ -1787,7 +1786,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
       animation-delay: 1.0s;
       display: inline-block;
       position: relative;
-      color: #ccde02;
+      color: $PrimaryColor;
     }
 
     h1 {
@@ -1828,7 +1827,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
         }
 
         &:hover span, &.active span {
-          background: #ccde02;
+          background: $PrimaryColor;
         }
       }
     }
@@ -1862,13 +1861,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
         &:hover {
           opacity: 1;
-          background: #ccde02;
+          background: $PrimaryColor;
         }
       }
 
       .owl-prev:hover {
         opacity: 1;
-        background: #ccde02;
+        background: $PrimaryColor;
       }
     }
   }
@@ -2024,7 +2023,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
       width: 24px;
       top: 24px;
       position: absolute;
-      color: #ccde02;
+      color: $PrimaryColor;
       text-align: center;
     }
   }
@@ -2166,10 +2165,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   .btn-link {
     border-bottom: none;
     color: #ffffff;
-    background: #ccde02;
+    background: $PrimaryColor;
     position: relative;
     display: block;
-    border: 1px solid #ccde02;
+    border: 1px solid $PrimaryColor;
     font-weight: 500;
     width: 100%;
     border-radius: 0.25rem;
@@ -2194,13 +2193,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
       &:after {
         background: none;
-        border: 1px solid #ccde02;
+        border: 1px solid $PrimaryColor;
         border-radius: 0.25rem;
         content: "+";
         right: 20px;
         left: inherit;
         font-size: 20px;
-        color: #ccde02;
+        color: $PrimaryColor;
         line-height: 24px;
         height: 26px;
         transform: none;
@@ -2312,10 +2311,10 @@ ul.resp-tabs-list {
 }
 
 .resp-tabs-list li.resp-tab-active {
-  background: #ccde02;
-  background: linear-gradient(-45deg, #ccde02, #8089ff);
+  background: $PrimaryColor;
+  background: linear-gradient(-45deg, $PrimaryColor, #8089ff);
   padding: 15px 20px 13px 20px;
-  color: #ccde02;
+  color: $PrimaryColor;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 
@@ -2347,13 +2346,13 @@ h2 {
 
   &.resp-tab-active {
     border-bottom: 0px solid #e4e4e4 !important;
-    background: #ccde02 !important;
+    background: $PrimaryColor !important;
     color: #fff;
   }
 
   &.resp-tab-title:last-child {
     border-bottom: 12px solid #e4e4e4 !important;
-    background: #ccde02;
+    background: $PrimaryColor;
   }
 }
 
@@ -2467,11 +2466,11 @@ h2.resp-tab-active span.resp-arrow {
     }
 
     &.resp-tab-active {
-      color: #ccde02;
+      color: $PrimaryColor;
 
       &:after {
         content: "";
-        background: #ccde02;
+        background: $PrimaryColor;
         height: 3px;
         width: 100%;
         position: absolute;
@@ -2501,11 +2500,11 @@ h2.resp-tab-active span.resp-arrow {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: #ffffff;
-    background: #ccde02;
+    background: $PrimaryColor;
 
     &.resp-tab-active {
       background-color: #fff;
-      color: #ccde02;
+      color: $PrimaryColor;
       border-top: 1px solid #ededed !important;
       border-left: 1px solid #ededed !important;
       border-right: 1px solid #ededed !important;
@@ -2514,7 +2513,7 @@ h2.resp-tab-active span.resp-arrow {
 
       &:before {
         content: "";
-        background: #ccde02;
+        background: $PrimaryColor;
         height: 5px;
         width: 100%;
         position: absolute;
@@ -2552,7 +2551,7 @@ h2.resp-tab-active span.resp-arrow {
         }
 
         &.resp-tab-active {
-          color: #ccde02;
+          color: $PrimaryColor;
         }
       }
     }
@@ -2597,7 +2596,7 @@ h2.resp-tab-active span.resp-arrow {
   }
 
   h2.resp-tab-active {
-    border: 1px solid #ccde02;
+    border: 1px solid $PrimaryColor;
   }
 }
 
@@ -2639,7 +2638,7 @@ h2.resp-tab-active span.resp-arrow {
   position: relative;
 
   &:before {
-    background: #ccde02;
+    background: $PrimaryColor;
     bottom: -1px;
     content: "";
     height: 2px;
@@ -2697,14 +2696,14 @@ h2.resp-tab-active span.resp-arrow {
       }
 
       &:hover {
-        color: #ccde02;
+        color: $PrimaryColor;
 
         &:before {
           content: "\f068";
           font-family: Font Awesome\ 5 Free;
           font-weight: 600;
           transition: all 500ms ease;
-          color: #ccde02;
+          color: $PrimaryColor;
         }
       }
 
@@ -2766,7 +2765,7 @@ h2.resp-tab-active span.resp-arrow {
       left: -1px;
       bottom: 0px;
       width: 4px;
-      background: #ccde02;
+      background: $PrimaryColor;
       content: "";
       z-index: 3;
       opacity: 0;
@@ -2818,7 +2817,7 @@ h2.resp-tab-active span.resp-arrow {
     }
 
     a .title .overlay-title h3 {
-      color: #ccde02;
+      color: $PrimaryColor;
       font-size: 17px;
       letter-spacing: 1px;
       line-height: 63px;
@@ -2909,7 +2908,7 @@ h2.resp-tab-active span.resp-arrow {
         line-height: 3;
         text-align: center;
         font-size: 20px;
-        background: #ccde02;
+        background: $PrimaryColor;
         color: #ffffff;
       }
     }
@@ -3000,7 +2999,7 @@ h2.resp-tab-active span.resp-arrow {
     min-width: 130px;
     padding: 15px 10px;
     border-radius: 0.25rem;
-    border-left: 4px solid #ccde02;
+    border-left: 4px solid $PrimaryColor;
     margin-left: 5px;
 
     span {
@@ -3129,7 +3128,7 @@ h2.resp-tab-active span.resp-arrow {
   vertical-align: middle;
   width: 155px;
   height: 155px;
-  border: 6px solid #ccde02;
+  border: 6px solid $PrimaryColor;
 }
 
 .counter-content {
@@ -3472,7 +3471,7 @@ h2.resp-tab-active span.resp-arrow {
       font-size: 16px;
 
       &:hover {
-        color: #ccde02;
+        color: $PrimaryColor;
       }
     }
 
@@ -3561,7 +3560,7 @@ h2.resp-tab-active span.resp-arrow {
     position: relative;
 
     .date {
-      background-color: #ccde02;
+      background-color: $PrimaryColor;
       padding: 5px 15px;
       text-align: center;
       color: #fff;
@@ -3639,9 +3638,9 @@ h2.resp-tab-active span.resp-arrow {
       display: inline-block;
 
       &:hover {
-        background: #ccde02;
+        background: $PrimaryColor;
         color: #ffffff;
-        border: 1px solid #ccde02;
+        border: 1px solid $PrimaryColor;
       }
     }
   }
@@ -3680,7 +3679,7 @@ blockquote {
   background: #fafafa;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-left: 3px solid #ccde02;
+  border-left: 3px solid $PrimaryColor;
 
   p {
     color: #282b2d;
@@ -3852,7 +3851,7 @@ select.form-control {
 }
 
 .form-control:focus {
-  border-color: #ccde02;
+  border-color: $PrimaryColor;
 }
 
 .quform-input {
@@ -3969,7 +3968,7 @@ select.form-control {
     right: 16px;
     top: -49px;
     width: auto;
-    background: #ccde02;
+    background: $PrimaryColor;
     height: 48px;
     border-left: 1px solid rgba(0, 0, 0, 0.05);
     -webkit-border-top-right-radius: 0.25em;
@@ -4062,7 +4061,7 @@ footer {
     left: 0;
     position: absolute;
     width: 50px;
-    background: #ccde02;
+    background: $PrimaryColor;
   }
 }
 
@@ -4171,13 +4170,13 @@ footer {
       }
 
       &:hover {
-        color: #ccde02;
+        color: $PrimaryColor;
 
         &:before {
           content: "\f068";
           font-family: Font Awesome\ 5 Free;
           font-weight: 600;
-          color: #ccde02;
+          color: $PrimaryColor;
         }
       }
     }
